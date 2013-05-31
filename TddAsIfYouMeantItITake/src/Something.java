@@ -10,9 +10,8 @@ public class Something {
 	public void TicTacToeWithZeroBoardWillMakeXWinAlways(){
 
 		String boardZero = "";
-		String expectXToWin = "true";
-		
-		String actual = "true";
+		String expectXToWin = "x-win";
+		String actual = "x-win";
 		
 		assertEquals(expectXToWin, actual);
 	}
@@ -20,9 +19,9 @@ public class Something {
 	@Test
 	public void testSomething() {
 		String boardOneByOne = "empty board one by one";
-		String expectNobodyToWin = "true";
+		String expectNobodyToWin = "draw";
+		String actual = "draw";
 		
-		String actual = "true";
 		
 		assertEquals(expectNobodyToWin, actual);
 		
