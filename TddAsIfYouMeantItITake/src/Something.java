@@ -16,13 +16,18 @@ public class Something {
 	public void testSomething() {
 		String boardOneByOne = "empty board one by one";
 		String expectNobodyToWin = "draw";
-		String actual = "draw";
+		String actual = winnerForDraw(boardOneByOne);
 		
 		assertEquals(expectNobodyToWin, actual);
 	}
 	
+	private String winnerForDraw(String boardOneByOne) {
+		return "draw";
+	}
+
 	private String winner(String board) {
 		return "x-win";
+		
 	}
 
 }
