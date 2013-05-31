@@ -7,7 +7,7 @@ import org.junit.Test;
 public class Something {
 
 	@Test
-	public void TestSmth(){
+	public void TicTacToeWithZeroBoardWillMakeXWinAlways(){
 
 		String boardZero = "";
 		String expectXToWin = "true";
@@ -15,7 +15,6 @@ public class Something {
 		String actual = "true";
 		
 		assertEquals(expectXToWin, actual);
-	
 	}
 	
 }
