@@ -17,7 +17,7 @@ public class Something {
 	@Test
 	public void TicTacToeWithZeroBoardWillMakeXWinAlways() {
 		String expectXToWin = "x-win";
-		String actual = winner(emptyBoard);
+		String actual = winnerWith(emptyBoard);
 		
 		assertEquals(expectXToWin, actual);
 	}
@@ -25,7 +25,7 @@ public class Something {
 	@Test
 	public void testNobodyWinsWithoutPlayingOnOneByOneBoard() {
 		String expectNobodyToWin = "pending";
-		String actual = gameStatus(oneByOneBoard);
+		String actual = gameStatusFor(oneByOneBoard);
 		
 		assertEquals(expectNobodyToWin, actual);
 	}
@@ -42,11 +42,11 @@ public class Something {
 		return "empty board one by one";
 	}
 	
-	private String gameStatus(String boardOneByOne) {
+	private String gameStatusFor(String boardOneByOne) {
 		return "pending";
 	}
 
-	private String winner(String board) {
+	private String winnerWith(String board) {
 		return "x-win";
 		
 	}
