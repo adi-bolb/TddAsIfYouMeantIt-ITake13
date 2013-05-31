@@ -10,7 +10,7 @@ public class Something {
 
 	@Before
 	public void setup(){
-		oneByOneBoard = emptyOneByOneBoard();
+		oneByOneBoard = boardEmptyOneByOne();
 		emptyBoard = "";
 	}
 	
@@ -38,7 +38,7 @@ public class Something {
 		assertEquals(nextPlayer, actualNextPlayer);
 	}
 
-	private String emptyOneByOneBoard() {
+	private String boardEmptyOneByOne() {
 		return "empty board one by one";
 	}
 	
