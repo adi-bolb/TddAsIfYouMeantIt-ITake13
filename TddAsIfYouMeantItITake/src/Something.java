@@ -21,6 +21,15 @@ public class Something {
 		assertEquals(expectNobodyToWin, actual);
 	}
 	
+	@Test
+	public void xPlaysFirstOnOneByOneBoard () throws Exception {
+		String boardOneByOne = "empty board one by one";
+		String nextPlayer = "x";
+		String actualNextPlayer = "x";
+		
+		assertEquals(nextPlayer, actualNextPlayer);
+	}
+	
 	private String gameStatus(String boardOneByOne) {
 		return "pending";
 	}
