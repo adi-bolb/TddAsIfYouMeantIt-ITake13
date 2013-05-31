@@ -2,13 +2,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-
-
 public class Something {
-
 	@Test
-	public void TicTacToeWithZeroBoardWillMakeXWinAlways(){
-
+	public void TicTacToeWithZeroBoardWillMakeXWinAlways() {
 		String boardZero = "";
 		String expectXToWin = "x-win";
 		String actual = "x-win";
@@ -22,9 +18,6 @@ public class Something {
 		String expectNobodyToWin = "draw";
 		String actual = "draw";
 		
-		
 		assertEquals(expectNobodyToWin, actual);
-		
 	}
-	
 }
