@@ -7,7 +7,7 @@ public class Something {
 	public void TicTacToeWithZeroBoardWillMakeXWinAlways() {
 		String boardZero = "";
 		String expectXToWin = "x-win";
-		String actual = "x-win";
+		String actual = winner(boardZero);
 		
 		assertEquals(expectXToWin, actual);
 	}
@@ -20,4 +20,9 @@ public class Something {
 		
 		assertEquals(expectNobodyToWin, actual);
 	}
+	
+	private String winner(String board) {
+		return "x-win";
+	}
+
 }
