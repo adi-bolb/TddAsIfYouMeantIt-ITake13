@@ -17,4 +17,15 @@ public class Something {
 		assertEquals(expectXToWin, actual);
 	}
 	
+	@Test
+	public void testSomething() {
+		String boardOneByOne = "empty board one by one";
+		String expectNobodyToWin = "true";
+		
+		String actual = "true";
+		
+		assertEquals(expectNobodyToWin, actual);
+		
+	}
+	
 }
