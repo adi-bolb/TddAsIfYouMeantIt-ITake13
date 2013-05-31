@@ -13,16 +13,16 @@ public class Something {
 	}
 	
 	@Test
-	public void testSomething() {
+	public void testNobodyWinsWithoutPlayingOnOneByOneBoard() {
 		String boardOneByOne = "empty board one by one";
-		String expectNobodyToWin = "draw";
-		String actual = winnerForDraw(boardOneByOne);
+		String expectNobodyToWin = "pending";
+		String actual = gameStatus(boardOneByOne);
 		
 		assertEquals(expectNobodyToWin, actual);
 	}
 	
-	private String winnerForDraw(String boardOneByOne) {
-		return "draw";
+	private String gameStatus(String boardOneByOne) {
+		return "pending";
 	}
 
 	private String winner(String board) {
